@@ -163,7 +163,7 @@ typedef enum SNMP_SYNTAXES {
 };
 
 typedef struct SNMP_OID {
-	byte data[SNMP_MAX_OID_LEN];  // ushort array insted??
+	byte data[SNMP_MAX_OID_LEN];  // ushort array instead??
 	size_t size;
 	//
 	void fromString(const char *buffer) {

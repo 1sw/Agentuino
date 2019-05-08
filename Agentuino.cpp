@@ -239,7 +239,7 @@ SNMP_API_STAT_CODES AgentuinoClass::requestPdu(SNMP_PDU *pdu)
 		return SNMP_API_STAT_OID_TOO_BIG;
 	}
 	//
-	// extract and contruct object-identifier
+	// extract and construct object-identifier
 	memset(pdu->OID.data, 0, SNMP_MAX_OID_LEN);
 	pdu->OID.size = obiLen;
 	for ( i = 0; i < obiLen; i++ ) {
